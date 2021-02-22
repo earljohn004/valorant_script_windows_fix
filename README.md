@@ -6,6 +6,9 @@ Script should be run everytime there is an update on the server. Client only nee
 ## Client Setup
 On your game menu settings, include generated client_transfer.bat in "Execute ahead: "
 
+## Server Usage
+Run batch file everytime there is an update for valorant.
+
 
 ## Script Process: 
 1. Script will copy contents from server's ProgramData and store in Server Gamedisk
