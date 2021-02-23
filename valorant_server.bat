@@ -32,6 +32,6 @@ xcopy %VALORANT_PROGRAMDATA%\* %GAMEDISK_FOLDER% /e /y
 
 :: Create a new batchfile to
 set FILE_PATH="%GAMEDISK_FOLDER%\..\%CLIENT_BATCHFILENAME%"
-echo set VALORANT_PROGRAMDATA="C:\ProgramData\Riot Games" > "%FILE_PATH%"
-echo set GAMEDISK_FOLDER="D:\Valorant_Files\ProgramData\">> "%FILE_PATH%"
+echo set VALORANT_PROGRAMDATA=%VALORANT_PROGRAMDATA% > "%FILE_PATH%"
+echo set GAMEDISK_FOLDER=%GAMEDISK_FOLDER%>> "%FILE_PATH%"
 echo xcopy %%GAMEDISK_FOLDER%%* %%VALORANT_PROGRAMDATA%% /e /y >> "%FILE_PATH%"
