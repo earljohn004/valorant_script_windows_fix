@@ -9,22 +9,29 @@
 :: How to use client-side:
 :: include created batch file in game menu, execute ahead
 
+
 :: ----------------------- VARIABLES START ------------------------------------
+:: modify this folder where you want the files to be saved on your gamedisk.
+
+@echo off
+set GAMEDISK_FOLDER="D:\Valorant_Files"
+
+:: IMPORTANT please do not put "\" in above path
+:: ------------------------ VARIABLES END -------------------------------------
+
 @echo off
 set VALORANT_PROGRAMDATA="C:\ProgramData\Riot Games"
-
-:: modify this folder where you want the files to be saved on your gamedisk.
-@echo off
-set GAMEDISK_FOLDER="D:\Valorant_Files\ProgramData\"
 
 :: modify the name of the batch file
 @echo off
 set CLIENT_BATCHFILENAME="client_transfer.bat"
 
-:: ------------------------ VARIABLES END -------------------------------------
+
+:: ----------------------- DO NOT CHANGE BELOW SCRIPT  ------------------------------------
 :: initial setup
 :: will run only when no variable VALORANT_PROGRAMDATA is found on ENV Variables
 :: create a folder on gamedisk
+set GAMEDISK_FOLDER=%GAMEDISK_FOLDER%\ProgramData\
 mkdir %GAMEDISK_FOLDER%
 
 ::Copy files from ProgramData to Gamedisk valorant
