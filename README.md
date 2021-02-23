@@ -7,7 +7,9 @@ Script should be run everytime there is an update on the server. Client only nee
 Modify ``GAMEDISK_FOLDER`` variable path depending on your setup. 
 
 example:
-`` GAMEDISK_FOLDER="D:\Valorant_Files\ProgramData\"``
+`` GAMEDISK_FOLDER="D:\Valorant_Files"``
+
+IMPORTANT NOTE: please do not include trailing "\" in ``GAMEDISK_FOLDER``
 
 ## Server Usage
 Run batch file everytime there is an update for valorant.
